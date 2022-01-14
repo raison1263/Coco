@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+@media screen and (max-width:1024px) 
+{
+
+    /* 메뉴창 */
+    #header #nav 
+    {
+        position: fixed;
+        top: 0px;
+        transform: translateY(0%);
+        right: 0px;
+        font-size: 18px;
+        color: #1e1e1e;
+        background: rgba(0, 0, 0, 0.5);
+        left: 100%;
+        bottom: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #header #nav .depth1 
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -200px;
+        width: 200px;
+        background: #fff;
+        padding-top: 50px;
+    }
+
+    #header #nav .depth1>li 
+    {
+        float: none;
+        position: relative;
+    }
+
+    #header #nav .depth1>li>a 
+    {
+        padding: 20px 40px;
+        display: block;
+        text-align: center;
+    }
+
+    #header #nav .depth1>li:hover>a 
+    {
+        color: #00529b;
+    }
+
+    /* 서브메뉴창 */
+    #header .depth2 
+    {
+        position: static;
+        top: 100%;
+        left: 0;
+        background: #555;
+        font-size: 14px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    /* 메뉴창 열기닫기 버튼 */
+    #header .opennav 
+    {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 30px;
+        transition: all 0.3s;
+    }
+
+    #header .opennav.on 
+    {
+        position: fixed;
+        top: 20px;
+        transform: translateY(0%);
+        right: 20px;
+        font-size: 30px;
+        z-index: 9999999999;
+    }
+
+    /* 검색창 */
+    #header .search 
+    {
+        position: fixed;
+        right: 70px;
+        top: 60px;
+        transform: translateY(0%);
+        font-size: 28px;
+        z-index: 99;
+    }
+
+    #header .search #sbox 
+    {
+        border: 0px solid #000;
+        text-indent: 1em;
+        width: 0px;
+        height: 30px;
+        overflow: hidden;
+        outline: none;
+        transition: all 0.5s;
+        position: absolute;
+        top: 0;
+        right: 40px;
+    }
+
+    #header .search.on #sbox 
+    {
+        width: 300px;
+        border: 1px solid #000;
+    }
+
+    /* 슬라이더 구역 */
+    .article1 .slick-dots li 
+    {
+        display: inline-block;
+        margin: 0 5px;
+        width: 80px;
+        height: 2px;
+        background: #999;
+        position: relative;
+    }
+
+    .article1 .slick-dots li.slick-active button 
+    {
+        width: 80px;
+        transition: all 3s;
+    }
+
+    .article1 .plpa 
+    {
+        font-size: 20px;
+        color :#fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        transform: translate(140px);
+    }
+
+    .article5 .row>div 
+    {
+        width: 100%;
+        float: left;
+    }
+
+    .article5 .row>div.cs_board 
+    {
+        padding-right: 0px;
+    }
+
+    .article5 .row>div.cs_center 
+    {
+        padding: 30px;
+        border: 1px solid #ddd;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .article5 .cs_center li::before 
+    {
+       display: none;
+    }
+
+    .article5 .row div.cs_movie 
+    {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .youtubeVideoInner
+    {
+        top: 20% !important;
+    }
+
+    #footer .info span 
+    {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) 
+{
+    #header .search #sbox 
+    {
+        top: 63px;
+        right: 0px;
+        height: 50px;
+    }
+
+    #section .article1 .slick-slide .slide_text h2 
+    {
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 800;
+        transform: translateY(0);
+        opacity: 1;
+        transition: unset;
+    }
+
+    /* article1 */
+    .article1 .slick-slide .slide_text p 
+    {
+        display: none;
+    }
+
+    .article1 .slide
+    {
+        height: 350px;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    .article2 li 
+    {
+        height: 220px;
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+
+    /* article2 */
+    .article2 li:hover>div 
+    {
+        bottom: 25px;
+    }
+
+    .article2 li:nth-child(1) 
+    {
+        transform: translate( 0% , 0);
+    }
+
+    .article2 li:nth-child(2) 
+    {
+        transform: translate( 0% , 0);
+        margin-right: 0;
+    }
+
+    .article2 li:nth-child(3) 
+    {
+        transform: translate( 0% , 0);
+    }
+
+    .article2 li:nth-child(4) 
+    {
+        transform: translate( 0% , 0);
+    }
+
+    #section h2 
+    {
+        font-size: 25px;
+        padding : 30px 0 10px;
+    }
+
+    .article2 li>div>p 
+    {
+        display: none;
+    }
+
+    /* article3 */
+    .article3 
+    {
+        margin-top: 30px;
+        padding: 50px 0;
+    }
+
+     /* article4 */
+     .article4 li 
+     {
+        width: 49%;
+        margin-right: 0%;
+        transform: scale(1);
+        opacity: 1;
+     }
+
+     .article4 li:nth-child(odd) 
+     {
+        margin-right: 2%
+     }
+
+     .article2 li>div 
+     {
+        text-align: center;
+    }
+
+     .article4 li p
+    {
+        display: none;
+    }
+
+    .article2 li>div>a 
+    {
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    /* article5 */
+    .article5 .row>div 
+    {
+        width: 100%;
+        float: left;
+    }
+
+    .article5 .row>div.cs_board 
+    {
+        padding-right: 0px;
+    }
+
+    .article5 .row>div.cs_center 
+    {
+        padding: 30px;
+        border: 1px solid #ddd;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .article5 .cs_center li::before 
+    {
+       display: none;
+    }
+
+    #footer .fam ul
+    {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        display: none;
+    }
+
+}
+
+
+
